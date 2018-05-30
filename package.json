@@ -1,0 +1,15 @@
+{
+  "name": "javascript-es6",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Iorgen Wildrik <w.drik@outlook.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "babel ./main.js -o bundle.js -w"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.0.0-beta.49",
+    "@babel/core": "^7.0.0-beta.49",
+    "@babel/preset-env": "^7.0.0-beta.49"
+  }
+}
