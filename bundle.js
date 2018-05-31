@@ -1,4 +1,57 @@
 "use strict";
+
+var arr = [1, 2, 4, 5, 8, 10];
+var mapArr = arr.map(function (item, index) {
+  return item + index;
+});
+console.log(mapArr);
+var reduceArr = arr.reduce(function (total, next) {
+  return total + next;
+});
+console.log(reduceArr);
+var filterArr = arr.filter(function (item) {
+  return item % 2 === 0;
+});
+console.log(filterArr);
+var findArr = arr.find(function (item) {
+  return item === 4;
+});
+console.log(findArr);
+"use strict";
+
+var arr = [1, 3, 4, 5, 6]; // const mapArr = arr.map(function (item, index) {
+//     return item + index;
+// });
+// console.log(mapArr);
+
+var mapArr = arr.map(function (item) {
+  return item * 2;
+});
+console.log(mapArr);
+
+var showName = function showName() {
+  return {
+    name: 'Iorgen'
+  };
+};
+
+console.log(showName()); // OR
+
+var showNameInline = function showNameInline() {
+  return {
+    name: 'Iorgen'
+  };
+};
+
+console.log(showNameInline()); // Default values for parameters
+
+var calc = function calc() {
+  var a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 3;
+  var b = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 6;
+  return a + b;
+};
+
+console.log(calc());
 "use strict";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
