@@ -216,6 +216,12 @@ var user2 = _objectSpread({}, user1, {
 console.log(user2);
 "use strict";
 
+console.log('-------> Template Literals');
+var name = 'Iorgen';
+var age = 25;
+console.log("Meu nome \xE9 ".concat(name, " e tenho ").concat(age, " anos"));
+"use strict";
+
 console.log('-------> Const, Var and Let');
 var user = {
   name: 'Iorgen'
