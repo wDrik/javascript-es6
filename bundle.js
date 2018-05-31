@@ -86,6 +86,18 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./calc.js":
+/*!*****************!*\
+  !*** ./calc.js ***!
+  \*****************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = calc;\n\nfunction calc(a, b) {\n  return a + b;\n}\n\n//# sourceURL=webpack:///./calc.js?");
+
+/***/ }),
+
 /***/ "./functions.js":
 /*!**********************!*\
   !*** ./functions.js ***!
@@ -94,7 +106,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.calc = calc;\n\nfunction calc(a, b) {\n  return a + b;\n}\n\n//# sourceURL=webpack:///./functions.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.calc = calc;\nexports.sub = sub;\n\nfunction calc(a, b) {\n  return a + b;\n}\n\nfunction sub(a, b) {\n  return a - b;\n}\n\n//# sourceURL=webpack:///./functions.js?");
 
 /***/ }),
 
@@ -106,7 +118,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _functions = __webpack_require__(/*! ./functions */ \"./functions.js\");\n\nconsole.log((0, _functions.calc)(1, 3));\n\n//# sourceURL=webpack:///./main.js?");
+eval("\n\nvar functions = _interopRequireWildcard(__webpack_require__(/*! ./functions */ \"./functions.js\"));\n\nvar _calc = _interopRequireDefault(__webpack_require__(/*! ./calc */ \"./calc.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }\n\n// Export default\nconsole.log((0, functions.calc)(1, 3));\nconsole.log((0, functions.sub)(4, 2));\nconsole.log((0, _calc.default)(5, 3));\nconsole.log(functions);\n\n//# sourceURL=webpack:///./main.js?");
 
 /***/ })
 
