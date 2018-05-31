@@ -1,12 +1,26 @@
-import { calc } from './functions';
-import { sub } from './functions';
-import calcDefault from './calc';
-import * as functions from './functions';
+const myPromise = () => new Promise((resolve, reject) => {
+	setTimeout(() => { resolve('Ok') }, 2000)
+});
 
+// myPromise()
+// 	.then(response => {
+// 		console.log(response);
+// 	})
+// 	.catch(err => {
+// 		console.log(err);
+// 	})
 
-// Export default
-console.log(calc(1, 3));
-console.log(sub(4, 2));
-console.log(calcDefault(5, 3));
+async function execPromise() {
+	let response = await myPromise();
 
-console.log(functions);
+	console.log(response);
+}
+
+const execPromiseArrow = async () => {
+	let response = await myPromise();
+
+	console.log(response);
+}
+
+execPromise();
+execPromiseArrow();
