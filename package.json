@@ -5,12 +5,15 @@
   "author": "Iorgen Wildrik <w.drik@outlook.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "babel src/assets/js/*.js -o bundle.js -w"
+    "dev": "webpack --mode=development -w"
   },
-  "dependencies": {
+  "devDependencies": {
     "@babel/cli": "^7.0.0-beta.49",
     "@babel/core": "^7.0.0-beta.49",
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.49",
-    "@babel/preset-env": "^7.0.0-beta.49"
+    "@babel/preset-env": "^7.0.0-beta.49",
+    "babel-loader": "8.0.0-beta.0",
+    "webpack": "^4.10.2",
+    "webpack-cli": "^2.1.4"
   }
 }
