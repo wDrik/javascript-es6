@@ -1,4 +1,5 @@
 "use strict";
+"use strict";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -82,3 +83,20 @@ myList.showUser(); // Call to static method
 
 console.log(TodoList.Calc(10, 15));
 "use strict";
+
+var user = {
+  name: 'Iorgen'
+};
+user.name = 'Wildrik!';
+console.log(user.name); // ---------- x ----------
+
+function test(x) {
+  var y = 2;
+
+  if (x > 5) {
+    var _y = 4;
+    console.log(x, _y);
+  }
+}
+
+test(10);
