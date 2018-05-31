@@ -137,6 +137,28 @@ myList.showUser(); // Call to static method
 console.log(TodoList.Calc(10, 15));
 "use strict";
 
+// Destructuring of objects
+var user = {
+  name: 'Iorgen',
+  age: 25,
+  address: {
+    city: 'Sumaré',
+    state: 'SP'
+  }
+}; // const { name, age, address: { city } } = user;
+// console.log(name);
+// console.log(age);
+// console.log(city);
+
+function showNameAndAge(_ref) {
+  var name = _ref.name,
+      age = _ref.age;
+  console.log(name, age);
+}
+
+showNameAndAge(user);
+"use strict";
+
 var user = {
   name: 'Iorgen'
 };
