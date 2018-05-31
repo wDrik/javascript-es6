@@ -1,4 +1,5 @@
-// Destructuring of objects
+console.log('-------> Destructuring of objects');
+
 const user = {
     name: 'Iorgen',
     age: 25,

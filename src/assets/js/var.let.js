@@ -1,3 +1,5 @@
+console.log('-------> Const, Var and Let')
+
 const user = { name: 'Iorgen' };
 
 user.name = 'Wildrik!';

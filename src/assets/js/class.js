@@ -1,3 +1,5 @@
+console.log('-------> Class');
+
 // Class
 class List {
 	constructor() {

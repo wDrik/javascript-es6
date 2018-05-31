@@ -1,3 +1,5 @@
+console.log('-------> Arrow Function');
+
 const arr = [1, 3, 4, 5, 6];
 
 // const mapArr = arr.map(function (item, index) {

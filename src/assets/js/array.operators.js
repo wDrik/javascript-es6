@@ -1,3 +1,5 @@
+console.log('-------> Array operators');
+
 const arr = [1, 2, 4, 5, 8, 10];
 
 const mapArr = arr.map(function (item, index) {
